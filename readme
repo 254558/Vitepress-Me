@@ -5,4 +5,9 @@
 怎么运行？
 npm run docs:dev
 
-怎么部署到vercel？
+部署到verce怎么总失败？
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
