@@ -5,7 +5,7 @@ export default defineConfig({
   title: "把你们都鲨了",
   description: "A VitePress Site",
   themeConfig: {
-    logo: '/logoo.svg',
+    logo: 'logoo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/' },
