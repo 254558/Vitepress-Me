@@ -6,8 +6,11 @@
 npm run docs:dev
 
 部署到verce怎么总失败？
-{
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
+第一步：package.json的scripts里新增一行: 
+    "build": "vitepress build",
+第二步：vercel的Output Directory设为: 
+    .vitepress/dist
+
+怎么加logo？
+
+怎么加主页图片？

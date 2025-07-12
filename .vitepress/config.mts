@@ -2,13 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "把你们都鲨了",
   description: "A VitePress Site",
   themeConfig: {
+    logo: '/logoo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '指南', link: '/' },
+      { text: '参考', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -20,6 +21,10 @@ export default defineConfig({
         ]
       }
     ],
+
+    search: {
+      provider: 'local'
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
