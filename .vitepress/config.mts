@@ -18,20 +18,13 @@ export default defineConfig({
       collapsed: false,
       items: [
         { text: 'What is VitePress?', link: 'what-is-vitepress' },
-        { text: 'Getting Started', link: 'getting-started' },
-        { text: 'Routing', link: 'routing' },
-        { text: 'Deploy', link: 'deploy' }
       ]
     },
     {
       text: '写作',
       collapsed: false,
       items: [
-        { text: 'Markdown Extensions', link: 'markdown' },
-        { text: 'Asset Handling', link: 'asset-handling' },
-        { text: 'Frontmatter', link: 'frontmatter' },
-        { text: 'Using Vue in Markdown', link: 'using-vue' },
-        { text: 'Internationalization', link: 'i18n' }
+        { text: '？', link: 'doc/什么？.md' },
       ]
     },
     ],
