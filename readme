@@ -1,16 +1,12 @@
-怎么安装？
-第一步：npx vitepress init
-第二步：npx vitepress init
+### 安装步骤
+1. 执行命令：`npx vitepress init`
+2. 再次执行命令：`npx vitepress init`
 
-怎么运行？
-npm run docs:dev
+### 运行方法
+执行命令：`npm run docs:dev`
 
-部署到verce怎么总失败？
-第一步：package.json的scripts里新增一行: 
-    "build": "vitepress build",
-第二步：vercel的Output Directory设为: 
-    .vitepress/dist
-
-怎么加logo？
-
-怎么加主页图片？
+### 部署到Vercel失败的解决步骤
+1. 在`package.json`的`scripts`中新增一行：  
+   `"build": "vitepress build"`
+2. 在Vercel中设置`Output Directory`为：  
+   `.vitepress/dist`
