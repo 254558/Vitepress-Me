@@ -1,0 +1,8 @@
+怎么安装？
+第一步：npx vitepress init
+第二步：npx vitepress init
+
+怎么运行？
+npm run docs:dev
+
+怎么部署到vercel？
