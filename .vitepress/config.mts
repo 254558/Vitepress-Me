@@ -9,17 +9,31 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/' },
-      { text: '参考', link: '/markdown-examples' }
+      { text: '参考', link: '/doc/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      text: '什么是markdown',
+      collapsed: false,
+      items: [
+        { text: 'What is VitePress?', link: 'what-is-vitepress' },
+        { text: 'Getting Started', link: 'getting-started' },
+        { text: 'Routing', link: 'routing' },
+        { text: 'Deploy', link: 'deploy' }
+      ]
+    },
+    {
+      text: '写作',
+      collapsed: false,
+      items: [
+        { text: 'Markdown Extensions', link: 'markdown' },
+        { text: 'Asset Handling', link: 'asset-handling' },
+        { text: 'Frontmatter', link: 'frontmatter' },
+        { text: 'Using Vue in Markdown', link: 'using-vue' },
+        { text: 'Internationalization', link: 'i18n' }
+      ]
+    },
     ],
 
     search: {
