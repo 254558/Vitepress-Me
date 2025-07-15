@@ -21,10 +21,10 @@ export default defineConfig({
       ]
     },
     {
-      text: '写作',
+      text: 'supabase',
       collapsed: false,
       items: [
-        { text: '？', link: 'doc/什么？.md' },
+        { text: '怎么用？', link: 'doc/how.md' },
       ]
     },
     ],
