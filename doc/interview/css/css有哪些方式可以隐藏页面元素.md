@@ -1,0 +1,2 @@
+- `display:none`：元素从文档流中移除，不占据空间。
+- `visibility:hidden`：元素隐藏，但仍占据原空间。
