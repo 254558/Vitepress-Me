@@ -24,6 +24,15 @@ export default defineConfig({
     ]
     },
 
+    {
+    text: 'Pinia',
+    collapsed: false,
+    items: 
+    [
+      { text: '举例', link: '/doc/Vue router' },
+    ]
+    },
+
 
     {
       text: 'supabase',
@@ -86,6 +95,8 @@ export default defineConfig({
           { text: '防抖与节流', link: '/doc/interview/vue/什么是防抖和节流' },
           { text: '双向绑定', link: '/doc/interview/vue/双向数据绑定是什么' },
           { text: 'Keep-Alive', link: '/doc/interview/vue/说说你对keep-alive的理解' },
+          { text: 'Vue3比Vue2', link: '/doc/interview/vue/Vue3 的响应式为什么比 Vue2 更强' },
+          { text: 'async和await', link: '/doc/interview/vue/async和await' },
         ]
         },
       ]
