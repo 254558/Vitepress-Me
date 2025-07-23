@@ -71,6 +71,7 @@ export default defineConfig({
           { text: '原型与原型链', link: '/doc/interview/js/JavaScript原型，原型链' },
           { text: '深浅拷贝', link: '/doc/interview/js/深拷贝浅拷贝的区别' },
           { text: '闭包', link: '/doc/interview/js/说说你对闭包的理解' },
+          { text: 'async和await', link: '/doc/interview/vue/async和await' },
         ]
         },
 
@@ -95,7 +96,7 @@ export default defineConfig({
           { text: '双向绑定', link: '/doc/interview/vue/双向数据绑定是什么' },
           { text: 'Keep-Alive', link: '/doc/interview/vue/说说你对keep-alive的理解' },
           { text: 'Vue3比Vue2', link: '/doc/interview/vue/Vue3 的响应式为什么比 Vue2 更强' },
-          { text: 'async和await', link: '/doc/interview/vue/async和await' },
+
         ]
         },
       ]
