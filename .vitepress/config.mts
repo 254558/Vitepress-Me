@@ -8,7 +8,7 @@ export default defineConfig({
     logo: 'logoo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '指南', link: '/' },
+      { text: '指南', link: '/doc/introduce' },
       { text: '参考', link: '/doc/Vue router' }
     ],
 
@@ -80,8 +80,8 @@ export default defineConfig({
         items: 
         [
           { text: '性能优化', link: '/doc/interview/vue/性能优化' },
-          { text: 'v-if 与 v-for', link: '/doc/interview/vue/directive-priority' },
-          { text: 'v-show 与 v-if ', link: '/doc/interview/vue/v-if和v-for的优先级是什么' },
+          { text: 'v-if 与 v-for', link: '/doc/interview/vue/v-if和v-for的优先级是什么' },
+          { text: 'v-show 与 v-if ', link: '/doc/interview/vue/v-show和v-if有什么区别' },
           { text: 'key 属性原理', link: '/doc/interview/vue/vue中key的原理' },
           { text: '过滤器', link: '/doc/interview/vue/Vue中的过滤器' },
           { text: '挂载过程', link: '/doc/interview/vue/Vue实例挂载的过程' },
