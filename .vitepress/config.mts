@@ -91,7 +91,6 @@ export default defineConfig({
           { text: '组件通信', link: '/doc/interview/vue/Vue组件之间的通信方式都有哪些' },
           { text: '权限管理', link: '/doc/interview/vue/vue要做权限管理' },
           { text: '跨域处理', link: '/doc/interview/vue/Vue项目中你是如何解决跨域' },
-          { text: 'Axios 封装', link: '/doc/interview/vue/Vue项目中有封装过axios吗' },
           { text: '防抖与节流', link: '/doc/interview/vue/什么是防抖和节流' },
           { text: '双向绑定', link: '/doc/interview/vue/双向数据绑定是什么' },
           { text: 'Keep-Alive', link: '/doc/interview/vue/说说你对keep-alive的理解' },
