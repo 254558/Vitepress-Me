@@ -1,3 +1,0 @@
-- **父子组件**：父传子props，子传父$emit 。
-- **兄弟组件**：通过事件总线或Vuex 。
-- **跨层级组件**：provide / inject或Vuex 。 

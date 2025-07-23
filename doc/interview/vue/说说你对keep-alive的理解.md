@@ -1,1 +1,0 @@
-keep - alive是Vue内置组件，缓存不活动组件实例，避免重复渲染，节省性能，用include、exclude控制缓存组件 。 

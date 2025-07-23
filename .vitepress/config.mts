@@ -49,17 +49,14 @@ export default defineConfig({
       collapsed: false,
       items: 
       [
-
-        { text: '能不能不看', link: 'doc/cao1.md' },
-
         {
         text: 'CSS',collapsed: true,
         items: 
         [
-          { text: '隐藏元素的方式', link: '/doc/interview/css/css有哪些方式可以隐藏页面元素.md' },
-          { text: 'Flexbox 布局', link: '/doc/interview/css/说说flexbox' },
+          { text: 'Flexbox', link: '/doc/interview/css/说说flexbox' },
           { text: '盒模型', link: '/doc/interview/css/说说你对盒子模型的理解' },
-          { text: '水平垂直居中', link: '/doc/interview/vue/元素水平垂直居中的方法有哪些' },
+          { text: '水平垂直居中', link: '/doc/interview/css/元素水平垂直居中的方法有哪些' },
+          { text: 'gird', link: '/doc/interview/css/grid布局' },
         ]
         },
 
@@ -79,23 +76,7 @@ export default defineConfig({
         collapsed: true,
         items: 
         [
-          { text: '性能优化', link: '/doc/interview/vue/性能优化' },
-          { text: 'v-if 与 v-for', link: '/doc/interview/vue/v-if和v-for的优先级是什么' },
-          { text: 'v-show 与 v-if ', link: '/doc/interview/vue/v-show和v-if有什么区别' },
-          { text: 'key 属性原理', link: '/doc/interview/vue/vue中key的原理' },
-          { text: '过滤器', link: '/doc/interview/vue/Vue中的过滤器' },
-          { text: '挂载过程', link: '/doc/interview/vue/Vue实例挂载的过程' },
-          { text: '常用修饰符', link: '/doc/interview/vue/Vue常用的修饰符有哪些' },
-          { text: 'Diff 算法', link: '/doc/interview/vue/vue的diff算法' },
-          { text: 'Mixin', link: '/doc/interview/vue/vue的mixin' },
-          { text: '组件通信', link: '/doc/interview/vue/Vue组件之间的通信方式都有哪些' },
-          { text: '权限管理', link: '/doc/interview/vue/vue要做权限管理' },
-          { text: '跨域处理', link: '/doc/interview/vue/Vue项目中你是如何解决跨域' },
-          { text: '防抖与节流', link: '/doc/interview/vue/什么是防抖和节流' },
-          { text: '双向绑定', link: '/doc/interview/vue/双向数据绑定是什么' },
-          { text: 'Keep-Alive', link: '/doc/interview/vue/说说你对keep-alive的理解' },
           { text: 'Vue3比Vue2', link: '/doc/interview/vue/Vue3 的响应式为什么比 Vue2 更强' },
-
         ]
         },
       ]
