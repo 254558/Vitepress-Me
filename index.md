@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 什么是Markdown？
-      link: /doc/markdown-examples
+      link: /doc/markdown
     - theme: alt
       text: 快速开始
       link: /doc/api-examples
