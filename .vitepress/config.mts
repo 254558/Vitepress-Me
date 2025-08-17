@@ -23,7 +23,7 @@ function getSidebar() {
   ]
 }
 
-// https://vitepress.dev/reference/site-config
+
 export default defineConfig({
   title: "把你们都鲨了",
   description: "A VitePress Site",
