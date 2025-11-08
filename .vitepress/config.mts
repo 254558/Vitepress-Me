@@ -5,9 +5,9 @@ function getSidebar() {
     {
       text: 'Vue',
       collapsible: true, // 是否可折叠
-      collapsed: false, // 默认是否折叠
+      collapsed: true, // 默认是否折叠
       items: [
-        { text: '快速开始', link: '/guide/quick-start' }, // 对应 docs/guide/quick-start.md
+        { text: 'prop和emit到底干嘛用的', link: '/vue/Vue 的props和emit是干嘛用的.md' }, // 对应 docs/guide/quick-start.md
       ]
     },
     {
@@ -19,11 +19,12 @@ function getSidebar() {
       ]
     },
     {
-      text: '英语',
-      collapsible: true, // 是否可折叠
-      collapsed: false, // 默认是否折叠
+      text: 'English',
+      collapsible: true, 
+      collapsed: true, 
       items: [
         { text: '擦边行业为什么男性占比这么少', link: '/english/擦边行业为什么男性占比这么少.md' },
+        { text: '不想努力想嫁人有错吗', link: '/english/想嫁人了，想坐享其成.md' },
       ]
     }
   ]

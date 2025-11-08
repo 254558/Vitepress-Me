@@ -15,7 +15,7 @@ hero:
       link: /doc/markdown
     - theme: alt
       text: 快速开始
-      link: /doc/想嫁人了，想坐享其成
+      link: /doc/me
 
 features:
   - icon: 🚀
