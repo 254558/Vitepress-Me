@@ -25,6 +25,7 @@ function getSidebar() {
       items: [
         { text: '擦边行业为什么男性占比这么少', link: '/english/擦边行业为什么男性占比这么少.md' },
         { text: '不想努力想嫁人有错吗', link: '/english/想嫁人了，想坐享其成.md' },
+        { text: '为什么都2025年了很多人还认为卫生巾必须装在深色袋子里？', link: '/english/为什么都2025年了很多人还认为卫生巾必须装在深色袋子里？.md' },
       ]
     }
   ]
