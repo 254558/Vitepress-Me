@@ -8,8 +8,6 @@ function getSidebar() {
       collapsed: false, // 默认是否折叠
       items: [
         { text: '快速开始', link: '/guide/quick-start' }, // 对应 docs/guide/quick-start.md
-        { text: '基础配置', link: '/guide/basic-config' }, // 对应 docs/guide/basic-config.md
-        { text: '进阶用法', link: '/guide/advanced' }      // 对应 docs/guide/advanced.md
       ]
     },
     {
@@ -17,13 +15,15 @@ function getSidebar() {
       collapsible: true,
       collapsed: true,
       items: [
-        { text: '按钮组件', link: '/components/button' },
+        { text: '数组', link: '/lodash/Array.md' },
       ]
     },
     {
       text: '英语',
+      collapsible: true, // 是否可折叠
+      collapsed: false, // 默认是否折叠
       items: [
-        { text: '泽连斯基', link: '/english/泽连斯基在后方紧吃.md' },
+        { text: '擦边行业为什么男性占比这么少', link: '/english/擦边行业为什么男性占比这么少.md' },
       ]
     }
   ]
