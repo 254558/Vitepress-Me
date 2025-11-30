@@ -7,7 +7,8 @@ function getSidebar() {
       collapsible: true, // 是否可折叠
       collapsed: true, // 默认是否折叠
       items: [
-        { text: 'prop和emit到底干嘛用的', link: '/vue/Vue 的props和emit是干嘛用的.md' }, // 对应 docs/guide/quick-start.md
+        { text: 'prop和emit到底干嘛用的', link: '/vue/Vue 的props和emit是干嘛用的.md' }, 
+        { text: 'Vue的this和JS的this是一个东西吗', link: '/vue/Vue的this和JS的this是一个东西吗.md' }, // 对应 docs/guide/quick-start.md
       ]
     },
     {
@@ -26,6 +27,9 @@ function getSidebar() {
         { text: '擦边行业为什么男性占比这么少', link: '/english/擦边行业为什么男性占比这么少.md' },
         { text: '不想努力想嫁人有错吗', link: '/english/想嫁人了，想坐享其成.md' },
         { text: '为什么都2025年了很多人还认为卫生巾必须装在深色袋子里？', link: '/english/为什么都2025年了很多人还认为卫生巾必须装在深色袋子里？.md' },
+        { text: '二十万彩礼真的很多吗？', link: '/english/二十万彩礼真的很多吗？.md' },
+        { text: '为什么当代女性喜欢称结婚后是免费保姆？', link: '/english/为什么当代女性喜欢称结婚后是免费保姆？.md' },
+        { text: '为什么感觉身边的女生思维都非常浅薄？', link: '/english/为什么感觉身边的女生思维都非常浅薄？.md' },
       ]
     }
   ]
