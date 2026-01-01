@@ -8,7 +8,10 @@ function getSidebar() {
       collapsed: true, // 默认是否折叠
       items: [
         { text: 'prop和emit到底干嘛用的', link: '/vue/Vue 的props和emit是干嘛用的.md' }, 
-        { text: 'Vue的this和JS的this是一个东西吗', link: '/vue/Vue的this和JS的this是一个东西吗.md' }, // 对应 docs/guide/quick-start.md
+        { text: 'Vue的this和JS的this是一个东西吗', link: '/vue/Vue的this和JS的this是一个东西吗.md' },
+        { text: '哪些数据要写在data里面，哪些要写在script里', link: '/vue/哪些数据要写在data里面，哪些要写在script里.md' }, 
+        { text: '最简 Vite + Vue + Element UI 项目快速搭建文档', link: '/vue/最简 Vite + Vue + Element UI 项目快速搭建文档.md' }, 
+        { text: 'watch、computed、methods 区别', link: '/vue/watch、computed、methods 区别.md' }, 
       ]
     },
     {

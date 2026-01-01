@@ -1,21 +1,11 @@
 # 最简 Vite + Vue + Element UI 项目快速搭建文档
-## 文档说明
-本文档提供唯一、极简的 Vite + Vue + Element UI 项目搭建方案，仅保留核心依赖和必要操作，无多余配置，适合快速启动简单项目或验证功能。
-
-## 一、环境要求
-- Node.js 版本 ≥ 14.18.0 或 ≥ 16.0.0（需提前安装，可通过 `node -v` 命令检查版本）
-
-## 二、搭建步骤（全程3步，1分钟完成）
 ### 1. 创建基础项目
 打开终端，执行以下命令一键生成 Vite + Vue 基础模板：
 ```bash
 npm create vite@latest my-vue-element -- --template vue
 ```
-- 说明：`my-vue-element` 为项目名称，可自定义（如 `simple-project`）
-- 执行后无需额外交互，直接生成最简项目结构
 
 ### 2. 安装核心依赖
-进入项目目录并安装唯一额外依赖 `element-plus`（Element UI 的 Vue 3 适配版）：
 ```bash
 # 进入项目目录（替换为你的项目名称）
 cd my-vue-element
@@ -89,16 +79,3 @@ my-vue-element/
 ├── package.json        # 依赖配置（仅3个核心依赖）
 └── vite.config.js      # Vite 基础配置（无需修改）
 ```
-
-## 五、核心特性
-1. 依赖极简：仅 `vite`、`vue`、`element-plus` 三个核心依赖，无冗余
-2. 零配置成本：无需修改 `vite.config.js`，Element Plus 自动支持按需加载
-3. 上手即⽤：修改完2个文件后，直接编写 Element 组件即可开发
-4. 热更新支持：修改代码后浏览器自动刷新，开发效率高
-
-## 六、使用说明
-1. 新增组件：在 `src` 目录下创建 `.vue` 文件，直接使用 Element 组件（无需额外导入）
-2. 扩展样式：在 `.vue` 文件的 `<style>` 标签中编写自定义样式，可覆盖 Element 默认样式
-3. 构建部署：项目开发完成后，执行 `npm run build` 命令，生成 `dist` 目录，直接部署该目录即可
-
-要不要我帮你整理一份**项目文件完整代码压缩包**，下载后解压即可直接运行，无需手动复制代码？
