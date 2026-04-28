@@ -8,16 +8,28 @@ function getSidebar() {
       collapsed: true, // 默认是否折叠
       items: [
         {
-          text: "prop和emit到底干嘛用的",
-          link: "/vue/Vue 的props和emit是干嘛用的.md",
+          text: "vue的路由守卫有哪些",
+          link: "/vue/vue的路由守卫有哪些.md",
         },
         {
-          text: "Vue的this和JS的this是一个东西吗",
-          link: "/vue/Vue的this和JS的this是一个东西吗.md",
+          text: "vue怎么利用url传递参数",
+          link: "/vue/vue怎么利用url传递参数.md",
         },
         {
-          text: "哪些数据要写在data里面，哪些要写在script里",
-          link: "/vue/哪些数据要写在data里面，哪些要写在script里.md",
+          text: "vue的路由怎么配置",
+          link: "/vue/vue的路由怎么配置.md",
+        },
+        {
+          text: "从es6开始有哪些新方法",
+          link: "/vue/从es6开始有哪些新方法.md",
+        },
+        {
+          text: "pinia怎么用",
+          link: "/vue/pinia怎么用.md",
+        },
+        {
+          text: "canvas常用方法",
+          link: "/vue/canvas常用方法.md",
         },
         {
           text: "最简 Vite + Vue + Element UI 项目快速搭建文档",
@@ -28,12 +40,6 @@ function getSidebar() {
           link: "/vue/watch、computed、methods 区别.md",
         },
       ],
-    },
-    {
-      text: "Lodash",
-      collapsible: true,
-      collapsed: true,
-      items: [{ text: "数组", link: "/lodash/Array.md" }],
     },
     {
       text: "English",
