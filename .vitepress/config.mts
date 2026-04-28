@@ -32,6 +32,10 @@ function getSidebar() {
           link: "/vue/canvas常用方法.md",
         },
         {
+          text: "vue组件之间如何通信",
+          link: "/vue/vue组件之间如何通信.md",
+        },
+        {
           text: "最简 Vite + Vue + Element UI 项目快速搭建文档",
           link: "/vue/最简 Vite + Vue + Element UI 项目快速搭建文档.md",
         },
