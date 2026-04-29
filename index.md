@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 什么是Markdown？
-      link: /doc/markdown
+      link: /doc/什么是markdown
     - theme: alt
       text: 快速开始
-      link: /doc/me
+      link: /vue/从es6开始有哪些新方法
 
 features:
   - icon: 🚀
