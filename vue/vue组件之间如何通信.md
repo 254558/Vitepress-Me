@@ -1,72 +1,134 @@
-# Vue 组件通信方式
+# vue组件之间如何通信
+## 一、父子通信
+### 1. 父 → 子：props
+**子组件 Child.vue**
+```vue
+<template>
+  <div>{{ msg }}</div>
+</template>
 
-## 一、父子组件通信（最常用）
-### 1. props / $emit（Vue 标准方案）
-- **父 → 子**：父组件通过自定义属性传值，子组件用 `props` 接收
-- **子 → 父**：子组件用 `$emit` 触发事件，父组件监听事件接收数据
-- 适用：最基础、最常用的父子通信
+<script setup>
+// 接收父传的值
+const props = defineProps({
+  msg: String
+})
+</script>
+```
 
-### 2. v-model 语法糖
-本质是 `props + emit` 的简写，适合表单/双向绑定场景。
+**父组件 Parent.vue**
+```vue
+<template>
+  <!-- 自定义属性传参 -->
+  <Child msg="我是父组件传过来的数据" />
+</template>
 
-### 3. $parent / $children（不推荐）
-- 直接访问父/子组件实例
-- 缺点：耦合度高，维护困难，官方不建议使用
-
-### 4. ref / $refs
-- 父组件给子组件加 `ref`，直接获取子组件实例/数据/方法
-- 适用：父组件主动调用子组件方法
-
----
-
-## 二、祖孙/跨级组件通信
-### 1. provide / inject（依赖注入）
-- 父组件 `provide` 提供数据/方法，所有后代组件（子孙、曾孙）都能用 `inject` 接收
-- 适用：多层嵌套组件，**非响应式数据**优先用它
-- 注意：默认不是响应式，需要响应式需传递响应式对象
-
-### 2. $attrs / $listeners
-- `$attrs`：父组件传递的、子组件未在 props 声明的属性
-- `$listeners`：父组件绑定的自定义事件
-- 适用：组件多层传递，简化中间层代码
+<script setup>
+import Child from './Child.vue'
+</script>
+```
 
 ---
 
-## 三、兄弟/任意组件通信
-### 1. EventBus（事件总线）
-- 原理：创建一个空 Vue 实例作为中央事件中心
-- 用法：`$on` 监听、`$emit` 触发、`$off` 销毁
-- 适用：简单项目、轻量跨组件通信
-- 缺点：大型项目易混乱，不推荐
+### 2. 子 → 父：$emit
+**子组件 Child.vue**
+```vue
+<template>
+  <button @click="sendData">向父传值</button>
+</template>
 
-### 2. Vuex / Pinia（全局状态管理）
-**Pinia（Vue3 推荐）** / **Vuex（Vue2 主流）**
-- 统一管理全局状态，所有组件都能读写
-- 适用：中大型项目、多组件共享复杂数据
-- 这是**企业级开发首选方案**
+<script setup>
+// 定义触发事件
+const emit = defineEmits(['getVal'])
+
+const sendData = () => {
+  // 触发自定义事件，并携带参数
+  emit('getVal', '子组件的内容')
+}
+</script>
+```
+
+**父组件 Parent.vue**
+```vue
+<template>
+  <!-- 监听子组件自定义事件 -->
+  <Child @getVal="handleGet" />
+</template>
+
+<script setup>
+const handleGet = (val) => {
+  console.log('父接收：', val) // 子组件的内容
+}
+</script>
+```
 
 ---
 
-## 四、边界场景/高级通信
-### 1. $root
-访问根组件实例，简单项目可做简易全局通信。
+### 3. ref：父直接获取子实例/方法
+**子组件 Child.vue**
+```vue
+<script setup>
+// 需主动暴露方法/变量
+const fun = () => {
+  console.log('子组件方法')
+}
+defineExpose({ fun })
+</script>
+```
 
-### 2. 作用域插槽（scopedSlot）
-- 子组件向父组件传数据，父组件根据子数据渲染内容
-- 适用：可复用组件、自定义渲染场景
+**父组件 Parent.vue**
+```vue
+<template>
+  <Child ref="childRef" />
+</template>
 
-### 3. 中央事件总线（升级版）+ mitt
-Vue3 移除了 `new Vue()` 作为 EventBus，推荐使用第三方库 `mitt` 实现轻量事件通信。
+<script setup>
+import { ref, onMounted } from 'vue'
+import Child from './Child.vue'
+
+const childRef = ref(null)
+
+onMounted(() => {
+  // 直接调用子组件方法
+  childRef.value.fun()
+})
+</script>
+```
 
 ---
 
-# 快速选型指南（直接背这个）
-1. **父子通信**：首选 **props/$emit**、**ref**
-2. **祖孙/跨级**：首选 **provide/inject**
-3. **兄弟/任意组件**：中大型项目用 **Pinia/Vuex**，简单项目用 **mitt/EventBus**
-4. **双向绑定**：**v-model**
-5. **组件封装**：**作用域插槽**
+## 二、祖孙跨级通信：provide / inject
+场景：顶层祖先组件 → 深层后代组件，中间组件不用层层透传
 
-### 总结
-1. 日常开发**80%场景**用：props/$emit、ref、Pinia/Vuex
-2. 多层嵌套用：provide/inject、$attrs
+### 祖先组件（最外层）
+```vue
+<script setup>
+import { provide, ref } from 'vue'
+
+// 响应式数据，后代可更新
+const info = ref('祖先提供的全局数据')
+
+// 向下注入
+provide('keyInfo', info)
+</script>
+```
+
+### 任意后代/孙子组件
+```vue
+<template>
+  <div>{{ info }}</div>
+</template>
+
+<script setup>
+import { inject } from 'vue'
+
+// 接收上层注入的数据
+const info = inject('keyInfo')
+</script>
+```
+
+---
+
+### 快速记忆
+1. 父子传值：`props` 下行，`emit` 上行
+2. 父调子：`ref + defineExpose`
+3. 多层嵌套跨级：上层 `provide`，下层 `inject`

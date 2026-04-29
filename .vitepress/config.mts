@@ -2,21 +2,22 @@ import { defineConfig } from "vitepress";
 
 function getSidebar() {
   return [
+// vue
     {
       text: "Vue",
       collapsible: true, // 是否可折叠
       collapsed: true, // 默认是否折叠
       items: [
         {
-          text: "vue的路由守卫有哪些",
+          text: "路由守卫有哪些",
           link: "/vue/vue的路由守卫有哪些.md",
         },
         {
-          text: "vue怎么利用url传递参数",
+          text: "怎么利用url传递参数",
           link: "/vue/vue怎么利用url传递参数.md",
         },
         {
-          text: "vue的路由怎么配置",
+          text: "路由怎么配置",
           link: "/vue/vue的路由怎么配置.md",
         },
         {
@@ -32,7 +33,7 @@ function getSidebar() {
           link: "/vue/canvas常用方法.md",
         },
         {
-          text: "vue组件之间如何通信",
+          text: "组件之间如何通信",
           link: "/vue/vue组件之间如何通信.md",
         },
         {
@@ -40,11 +41,20 @@ function getSidebar() {
           link: "/vue/最简 Vite + Vue + Element UI 项目快速搭建文档.md",
         },
         {
+          text: "接口调不通怎么办",
+          link: "/vue/接口调不通怎么办.md",
+        },
+        {
+          text: "防抖和节流",
+          link: "/vue/防抖和节流.md",
+        },
+        {
           text: "watch、computed、methods 区别",
           link: "/vue/watch、computed、methods 区别.md",
         },
       ],
     },
+// english
     {
       text: "English",
       collapsible: true,
@@ -148,6 +158,7 @@ function getSidebar() {
         },
       ],
     },
+// english2
     {
       text: "English2",
       collapsible: true,
@@ -173,6 +184,21 @@ function getSidebar() {
         
       ],
     },
+// english3
+    {
+      text: "English3",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "为什么中大型鹦鹉一直都不开放售卖", link: "/english3/为什么中大型鹦鹉一直都不开放售卖.md" },
+        { text: "房子烂手上了，怎么办", link: "/english3/房子烂手上了，怎么办.md" },
+        { text: "你是怎样学会编程的", link: "/english3/你是怎样学会编程的.md" },
+        { text: "Faker 的实力真的有传说中那么强吗", link: "/english3/Faker 的实力真的有传说中那么强吗.md" },
+        { text: "什么时候你意识到做技术永无出路", link: "/english3/什么时候你意识到做技术永无出路.md" },
+        
+      ]
+
+    }
   ];
 }
 
