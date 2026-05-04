@@ -15,5 +15,6 @@ export const vueSidebar = {
     { text: "接口调不通怎么办", link: "/vue/接口调不通怎么办.md" },
     { text: "防抖和节流", link: "/vue/防抖和节流.md" },
     { text: "watch、computed、methods 区别", link: "/vue/watch、computed、methods 区别.md" },
+    { text: "vitepress怎么用tailwind", link: "/vue/vitepress怎么用tailwind.md" },
   ],
 };

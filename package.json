@@ -1,6 +1,8 @@
 {
   "devDependencies": {
+    "@tailwindcss/vite": "^4.2.4",
     "markdown-it-mathjax3": "^4.3.2",
+    "tailwindcss": "^4.2.4",
     "vitepress": "^1.6.3"
   },
   "scripts": {

@@ -1,9 +1,15 @@
 import { defineConfig } from "vitepress";
 import { getSidebar } from "./sidebar";
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   title: "把你们都鲨了",
   description: "A VitePress Site",
+
+  // 👇 在这里加入 vite 配置，启用 Tailwind
+  vite: {
+    plugins: [tailwindcss()]
+  },
 
   themeConfig: {
     logo: "logoo.svg",
