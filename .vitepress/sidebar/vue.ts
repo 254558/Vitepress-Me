@@ -16,5 +16,11 @@ export const vueSidebar = {
     { text: "防抖和节流", link: "/vue/防抖和节流.md" },
     { text: "watch、computed、methods 区别", link: "/vue/watch、computed、methods 区别.md" },
     { text: "vitepress怎么用tailwind", link: "/vue/vitepress怎么用tailwind.md" },
+    { text: "Ts常用语法", link: "/vue/Ts常用语法.md" },
+    { text: "Nuxt常用语法", link: "/vue/Nuxt常用语法.md" },
+    { text: "明文密码怎么加密", link: "/vue/明文密码怎么加密.md" },
+    { text: "jwt是干嘛的", link: "/vue/jwt是干嘛的.md" },
+    
+    
   ],
 };
