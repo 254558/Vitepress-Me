@@ -9,6 +9,8 @@ export default defineConfig({
   // 忽略死链，让构建能成功（解决你现在的报错）
   ignoreDeadLinks: true,
 
+  outDir: './dist',
+
   // 👇 在这里加入 vite 配置，启用 Tailwind
   vite: {
     plugins: [tailwindcss()]
