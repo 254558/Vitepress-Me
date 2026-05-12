@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   title: "把你们都鲨了",
   description: "A VitePress Site",  
-
+  ignoreDeadLinks: true,
   vite: {
     plugins: [tailwindcss()]
   },
